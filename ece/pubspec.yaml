@@ -1,0 +1,246 @@
+name: ece
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  curved_navigation_bar: ^1.0.3
+  url_launcher: ^6.1.11
+  uni_links: ^0.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - asset/
+    - asset/ece-logo.png
+    - asset/BGMI2.jpeg
+    - asset/chess.jpeg
+    - asset/coc.jpeg
+    - asset/scribble.jpeg
+    - asset/UNO.jpeg
+    - asset/pes12.jpg
+    - asset/meme.jpeg
+    - asset/reel.jpeg
+    - asset/photo.jpeg
+    - asset/logolevel.png
+    - asset/bg.jpg
+    - asset/emerge_logo1.png
+    - asset/cheerio_logo.png
+    - asset/3rdsem.png
+    - asset/4thsem.png
+    - asset/5thsem.png
+    - asset/6thsem.png
+    - asset/7thsem.png
+    - asset/8thsem.png
+    - asset/1stsem.png
+    - asset/2ndsem.png
+    - asset/oe.png
+    - asset/pe.png
+    - asset/1stsem1.png
+    - asset/1stsem2.png
+    - asset/1stsem3.png
+    - asset/1stsem4.png
+    - asset/1stsem5.png
+    - asset/1stsem6.png
+    - asset/1stsem7.png
+    - asset/1stsem8.png
+    - asset/1stsem9.png
+    - asset/1stsem10.png
+    - asset/1stsem11.png
+    - asset/1stsem12.png
+    - asset/2ndsem1.png
+    - asset/2ndsem2.png
+    - asset/2ndsem3.png
+    - asset/2ndsem4.png
+    - asset/2ndsem5.png
+    - asset/2ndsem6.png
+    - asset/2ndsem7.png
+    - asset/2ndsem8.png
+    - asset/2ndsem9.png
+    - asset/2ndsem10.png
+    - asset/2ndsem11.png
+    - asset/2ndsem12.png
+    - asset/2ndsem13.png
+    - asset/3rdsem1.png
+    - asset/3rdsem2.png
+    - asset/3rdsem3.png
+    - asset/3rdsem4.png
+    - asset/3rdsem5.png
+    - asset/3rdsem6.png
+    - asset/3rdsem7.png
+    - asset/3rdsem8.png
+    - asset/3rdsem9.png
+    - asset/3rdsem10.png
+    - asset/3rdsem11.png
+    - asset/4thsem1.png
+    - asset/4thsem2.png
+    - asset/4thsem3.png
+    - asset/4thsem4.png
+    - asset/4thsem5.png
+    - asset/4thsem6.png
+    - asset/4thsem7.png
+    - asset/4thsem8.png
+    - asset/4thsem9.png
+    - asset/4thsem10.png
+    - asset/4thsem11.png
+    - asset/4thsem12.png
+    - asset/4thsem13.png
+    - asset/4thsem14.png
+    - asset/4thsem15.png
+    - asset/5thsem1.png
+    - asset/5thsem2.png
+    - asset/5thsem3.png
+    - asset/5thsem4.png
+    - asset/5thsem5.png
+    - asset/5thsem6.png
+    - asset/5thsem7.png
+    - asset/5thsem8.png
+    - asset/5thsem9.png
+    - asset/5thsem10.png
+    - asset/5thsem11.png
+    - asset/5thsem12.png
+    - asset/5thsem13.png
+    - asset/5thsem14.png
+    - asset/5thsem15.png
+    - asset/5thsem16.png
+    - asset/5thsem17.png
+    - asset/5thsem18.png
+    - asset/5thsem19.png
+    - asset/5thsem20.png
+    - asset/5thsem21.png
+    - asset/5thsem22.png
+    - asset/5thsem23.png
+    - asset/6thsem1.png
+    - asset/6thsem2.png
+    - asset/6thsem3.png
+    - asset/6thsem4.png
+    - asset/6thsem5.png
+    - asset/6thsem6.png
+    - asset/6thsem7.png
+    - asset/6thsem8.png
+    - asset/6thsem9.png
+    - asset/6thsem10.png
+    - asset/6thsem11.png
+    - asset/6thsem12.png
+    - asset/6thsem13.png
+    - asset/6thsem14.png
+    - asset/6thsem15.png
+    - asset/6thsem16.png
+    - asset/6thsem17.png
+    - asset/6thsem18.png
+    - asset/6thsem19.png
+    - asset/6thsem20.png
+    - asset/6thsem21.png
+    - asset/7thsem1.png
+    - asset/7thsem2.png
+    - asset/7thsem3.png
+    - asset/7thsem4.png
+    - asset/7thsem5.png
+    - asset/7thsem6.png
+    - asset/7thsem7.png
+    - asset/7thsem8.png
+    - asset/7thsem9.png
+    - asset/7thsem10.png
+    - asset/7thsem11.png
+    - asset/7thsem12.png
+    - asset/7thsem13.png
+    - asset/7thsem14.png
+    - asset/7thsem15.png
+    - asset/7thsem16.png
+    - asset/7thsem17.png
+    - asset/7thsem18.png
+    - asset/7thsem19.png
+    - asset/7thsem01.png
+    - asset/8thsem1.png
+    - asset/8thsem2.png
+    - asset/8thsem3.png
+    - asset/8thsem4.png
+    - asset/8thsem5.png
+    - asset/8thsem6.png
+    - asset/8thsem7.png
+    - asset/8thsem8.png
+    - asset/8thsem9.png
+    - asset/8thsem10.png
+    - asset/8thsem11.png
+    - asset/8thsem12.png
+    - asset/8thsem13.png
+    - asset/8thsem14.png
+    - asset/8thsem15.png
+    - asset/8thsem16.png
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
