@@ -89,13 +89,21 @@ class Semester3Page extends StatelessWidget {
                 }
                 else if (index == 9) {
                   return Image.asset(
-                    'asset/3rdsem10.png',
+                    'asset/3rdsem9.png',
                     // height: 200,
                     width: double.infinity,
                     fit: BoxFit.cover,
                   );
                 }
                 else if (index == 10) {
+                  return Image.asset(
+                    'asset/3rdsem10.png',
+                    // height: 200,
+                    width: double.infinity,
+                    fit: BoxFit.cover,
+                  );
+                }
+                else if (index == 11) {
                   return Image.asset(
                     'asset/3rdsem11.png',
                     // height: 200,
