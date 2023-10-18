@@ -1,5 +1,5 @@
 # ECE-App
-### An Experimental App ECE Dept,TMSL It,s NOT OFFCIAL
+### An Experimental App ECE Dept,TMSL It,s  OFFCIAL
 
 
 ## Here is the Overview of the App:-
