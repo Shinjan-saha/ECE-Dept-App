@@ -71,17 +71,17 @@ flutter:
   assets:
     - asset/
     - asset/ece-logo.png
-    - asset/BGMI2.jpeg
-    - asset/chess.jpeg
-    - asset/coc.jpeg
-    - asset/scribble.jpeg
-    - asset/UNO.jpeg
-    - asset/pes12.jpg
-    - asset/meme.jpeg
-    - asset/reel.jpeg
-    - asset/photo.jpeg
-    - asset/logolevel.png
-    - asset/bg.jpg
+    # - asset/BGMI2.jpeg
+    # - asset/chess.jpeg
+    # - asset/coc.jpeg
+    # - asset/scribble.jpeg
+    # - asset/UNO.jpeg
+    # - asset/pes12.jpg
+    # - asset/meme.jpeg
+    # - asset/reel.jpeg
+    # - asset/photo.jpeg
+    # - asset/logolevel.png
+    # - asset/bg.jpg
     - asset/emerge_logo1.png
     - asset/cheerio_logo.png
     - asset/3rdsem.png
@@ -92,8 +92,8 @@ flutter:
     - asset/8thsem.png
     - asset/1stsem.png
     - asset/2ndsem.png
-    - asset/oe.png
-    - asset/pe.png
+    # - asset/oe.png
+    # - asset/pe.png
     - asset/1stsem1.png
     - asset/1stsem2.png
     - asset/1stsem3.png
