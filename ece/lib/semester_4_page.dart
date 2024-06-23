@@ -6,10 +6,10 @@ class Semester4Page extends StatefulWidget {
 }
 
 class _Semester4PageState extends State<Semester4Page> {
-  String _selectedOption = 'Syllabus';
+  String _selectedOption = '4th Sem Syllabus';
 
   final Map<String, List<String>> _imageGroups = {
-    'Syllabus': ['4thsem.png'],
+    '4th Sem Syllabus': ['4thsem.png'],
     'Analog Communication': ['4thsem1.png', '4thsem2.png'],
     'Analog Circuit': ['4thsem3.png'],
     'Microprocessor & Microcontroller': ['4thsem4.png'],
@@ -28,6 +28,7 @@ class _Semester4PageState extends State<Semester4Page> {
     return Scaffold(
       appBar: AppBar(
         title: Text('4th Semester Syllabus'),
+         backgroundColor: Colors.blue,
       ),
       body: SingleChildScrollView(
         child: Column(
