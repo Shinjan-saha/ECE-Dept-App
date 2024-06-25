@@ -45,7 +45,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('asset/bg.jpg'), // Set the path to your background image here
+                image: AssetImage('asset/newbgg.webp'), // Set the path to your background image here
                 fit: BoxFit.cover,
               ),
             ),
