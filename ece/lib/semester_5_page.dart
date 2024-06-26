@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'main_electives_page.dart';
+import 'prof_electives_page.dart';
 
 class Semester5Page extends StatefulWidget {
   @override
@@ -10,15 +12,18 @@ class _Semester5PageState extends State<Semester5Page> {
 
   final Map<String, List<String>> _imageGroups = {
     '5th Sem Syllabus': ['5thsem.png'],
-    'Electromagnetic Waves': ['5thsem1.png','5thsem2.png'],
+    'Electromagnetic Waves': ['5thsem1.png', '5thsem2.png'],
     'Computer Architecture': ['5thsem3.png'],
-    'Digital Commuinictation & Stochastic': ['5thsem4.png','5thsem5.png'],
-    'Digital Signal Processing': ['5thsem6.png','5thsem7.png'],
-    'Electromagnetic Waves Labratory': ['5thsem8.png'],
-    'Digital Commuinctation Labratory': ['5thsem9.png'],
-    'Digital Signal Processing Labratory': ['5thsem10.png'],
-    'Effective Technical Commuinictation': ['5thsem11.png','5thsem12.png','5thsem13.png'],
-    
+    'Digital Communication & Stochastic': ['5thsem4.png', '5thsem5.png'],
+    'Digital Signal Processing': ['5thsem6.png', '5thsem7.png'],
+    'Electromagnetic Waves Laboratory': ['5thsem8.png'],
+    'Digital Communication Laboratory': ['5thsem9.png'],
+    'Digital Signal Processing Laboratory': ['5thsem10.png'],
+    'Effective Technical Communication': [
+      '5thsem11.png',
+      '5thsem12.png',
+      '5thsem13.png'
+    ],
   };
 
   @override
@@ -43,7 +48,7 @@ class _Semester5PageState extends State<Semester5Page> {
               child: DecoratedBox(
                 decoration: BoxDecoration(
                   color: Colors.teal[50],
-                  borderRadius: BorderRadius.circular(12), // Rounded corners
+                  borderRadius: BorderRadius.circular(12),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey.withOpacity(0.3),
@@ -58,9 +63,23 @@ class _Semester5PageState extends State<Semester5Page> {
                     child: DropdownButton<String>(
                       value: _selectedOption,
                       onChanged: (String? newValue) {
-                        setState(() {
-                          _selectedOption = newValue!;
-                        });
+                        if (newValue == 'Open Electives') {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => OpenElectivePage()),
+                          );
+                        } else if (newValue == 'Professional Electives') {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ProfElectivePage()),
+                          );
+                        } else {
+                          setState(() {
+                            _selectedOption = newValue!;
+                          });
+                        }
                       },
                       dropdownColor: Colors.teal[50],
                       items: _imageGroups.keys
@@ -75,7 +94,27 @@ class _Semester5PageState extends State<Semester5Page> {
                             ),
                           ),
                         );
-                      }).toList(),
+                      }).toList()
+                        ..add(DropdownMenuItem<String>(
+                          value: 'Open Electives',
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              'Open Electives',
+                              style: TextStyle(fontSize: 16),
+                            ),
+                          ),
+                        ))
+                        ..add(DropdownMenuItem<String>(
+                          value: 'Professional Electives',
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              'Professional Electives',
+                              style: TextStyle(fontSize: 16),
+                            ),
+                          ),
+                        )),
                       icon: Icon(Icons.arrow_drop_down, color: Colors.teal),
                       style: TextStyle(color: Colors.teal, fontSize: 16),
                     ),
@@ -89,13 +128,13 @@ class _Semester5PageState extends State<Semester5Page> {
                   .map((imageName) => Container(
                         margin: EdgeInsets.symmetric(vertical: 10.0),
                         decoration: BoxDecoration(
-                          color: Colors.blueGrey[50], // Light bluish-grey background
+                          color: Colors.blueGrey[50],
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.withOpacity(0.5),
                               spreadRadius: 5,
                               blurRadius: 7,
-                              offset: Offset(0, 3), // changes position of shadow
+                              offset: Offset(0, 3),
                             ),
                           ],
                         ),
@@ -118,5 +157,3 @@ class _Semester5PageState extends State<Semester5Page> {
     );
   }
 }
-
-
