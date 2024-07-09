@@ -23,7 +23,7 @@ class _OpenElectivePageState extends State<OpenElectivePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Main Electives Syllabus'),
+        title: Text('Open Electives Syllabus'),
         backgroundColor: Colors.teal,
       ),
       body: SingleChildScrollView(
