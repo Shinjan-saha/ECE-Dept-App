@@ -20,5 +20,5 @@
 <li>App Only Work on Android </li>
 <li> Despite flutter being A multi platform  this app is curretly cofigured for Android  only </li>
 <li>All Resources  are uploaded in this repo</li>
-<li> You Can Download this app Over here:-https://drive.google.com/file/d/1sawhg1eRZhFzMIpWWUIchFf8Exrea8AW/view?usp=sharing</li>
+<li> You Can Download this app Over here:-https://drive.google.com/drive/folders/1d7RdYlgNO_cUIuRVu1YD_KODpEAYMDND?usp=share_link</li>
 </ul>

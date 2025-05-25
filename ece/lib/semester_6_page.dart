@@ -13,7 +13,7 @@ class _Semester6PageState extends State<Semester6Page> {
   final Map<String, List<String>> _imageGroups = {
     '6th Sem Syllabus': ['6thsem.png'],
     'Control System & Instrumentation': ['6thsem1.png', '6thsem2.png'],
-    'Computer Netwwork': ['6thsem3.png','6thsem4.png'],
+    'Computer Network': ['6thsem3.png','6thsem4.png'],
     'Economics for Engineering': ['6thsem5.png'],
     'Computer Network Lab': ['6thsem6.png'],
     'Control & Instrumentation Labratory': ['6thsem7.png'],

@@ -69,18 +69,10 @@ class _EventsPageState extends State<EventsPage>
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 SlideTransition(
-                  position: _emergeAnimation,
-                  child: GestureDetector(
-                    onTap: () =>
-                        _launchURL('https://emerge-ece-tmsl.vercel.app/'),
-                    child: _buildRectangleBox('asset/emerge_logo1.png'),
-                  ),
-                ),
-                SlideTransition(
                   position: _cheerioAnimation,
                   child: GestureDetector(
-                    onTap: () =>
-                        _launchURL('https://cheerio-ece-farewell.vercel.app/'),
+                    onTap: () => _launchURL(
+                        'https://cheerio-ece-farewell.vercel.app/'),
                     child: _buildRectangleBox('asset/cheerio_logo.png'),
                   ),
                 ),
@@ -107,11 +99,12 @@ class _EventsPageState extends State<EventsPage>
     );
   }
 
-  Future<void> _launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url, forceSafariVC: false, forceWebView: false);
+  Future<void> _launchURL(String urlString) async {
+    final Uri url = Uri.parse(urlString);
+    if (await canLaunchUrl(url)) {
+      await launchUrl(url, mode: LaunchMode.externalApplication);
     } else {
-      throw 'Could not launch $url';
+      throw 'Could not launch $urlString';
     }
   }
 }
