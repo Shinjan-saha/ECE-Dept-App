@@ -2,7 +2,7 @@
     <application
         android:label="ece"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ecelogo">
         <activity
             android:name=".MainActivity"
             android:exported="true"
