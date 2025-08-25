@@ -3,7 +3,6 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 import 'home_page.dart';
 import 'syllabus_page.dart';
-import 'events_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-       debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Curved Navigation',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -34,35 +33,31 @@ class _BottomNavigationState extends State<BottomNavigation> {
   final List<Widget> _pages = [
     HomePage(),
     SyllabusPage(),
-    EventsPage(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('asset/newbgg.webp'), // Set the path to your background image here
-                fit: BoxFit.cover,
-              ),
-            ),
-             child: _pages[_currentIndex],
+      extendBody: true, // lets nav bar float smoothly above background
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('asset/newbgg.webp'),
+            fit: BoxFit.cover,
           ),
-          
-        ],
+        ),
+        child: _pages[_currentIndex],
       ),
       bottomNavigationBar: CurvedNavigationBar(
         index: _currentIndex,
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.transparent,
         color: Colors.white,
-        height: 50.0,
-        items: <Widget>[
+        height: 55.0,
+        animationCurve: Curves.easeInOut, // smooth curve
+        animationDuration: const Duration(milliseconds: 400),
+        items: const <Widget>[
           Icon(Icons.home, size: 30),
           Icon(Icons.book, size: 30),
-          Icon(Icons.event, size: 30),
         ],
         onTap: (index) {
           setState(() {
